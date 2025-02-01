@@ -1,0 +1,44 @@
+[0m22:22:50.917455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CFB73A5D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CFB55C5090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CFB84E7ED0>]}
+
+
+============================== 22:22:50.924541 | 19109c41-24b4-42ea-abe6-51dd39ef372c ==============================
+[0m22:22:50.924541 [info ] [MainThread]: Running with dbt=1.9.2
+[0m22:22:50.925550 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\USER\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt init Pharmacy_db', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:22:50.941846 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse logging event dictionary. Failed to parse dir field: expected string or bytes-like object, got 'WindowsPath'.. Dictionary: {'dir': WindowsPath('C:/Users/USER/.dbt')}
+[0m22:22:50.942537 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m22:22:50.944428 [debug] [MainThread]: Starter project path: C:\Users\USER\Documents\10X Exercises\Week-7-Kara_Solutions\.venv\Lib\site-packages\dbt\include\starter_project
+[0m22:22:50.967228 [info ] [MainThread]: 
+Your new dbt project "Pharmacy_db" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:22:50.968469 [info ] [MainThread]: Setting up your profile.
+[0m22:22:50.969657 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No adapters available. Learn how to install an adapter by going to https://docs.getdbt.com/docs/connect-adapters#install-using-the-cli
+[0m22:22:50.970554 [debug] [MainThread]: Command `dbt init` failed at 22:22:50.970444 after 0.25 seconds
+[0m22:22:50.970850 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CFB84FEC40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CFB856B9B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CFB83A2CF0>]}
+[0m22:22:50.971246 [debug] [MainThread]: Flushing usage events
+[0m22:22:52.159535 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:29:05.622311 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198A3BF5D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198A1DA5090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198A4D33ED0>]}
+
+
+============================== 22:29:05.631064 | a93603fc-672b-45c5-92b2-a1180fd6b1ab ==============================
+[0m22:29:05.631064 [info ] [MainThread]: Running with dbt=1.9.2
+[0m22:29:05.632464 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\USER\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt init Pharmacy_db', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:29:05.654835 [info ] [MainThread]: A project called Pharmacy_db already exists here.
+[0m22:29:05.656332 [debug] [MainThread]: Command `dbt init` succeeded at 22:29:05.656205 after 0.19 seconds
+[0m22:29:05.656631 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198A4D4E8B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198A4DBB9B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198A4BF19D0>]}
+[0m22:29:05.656933 [debug] [MainThread]: Flushing usage events
+[0m22:29:06.886285 [debug] [MainThread]: An error was encountered while trying to flush usage events
