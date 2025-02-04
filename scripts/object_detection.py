@@ -18,8 +18,14 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 # Load YOLOv5 model
 model = torch.hub.load('ultralytics/yolov5', 'yolov5m', force_reload=True)
 
+DB_HOST = os.getenv("DB_HOST")
+DB_PORT = os.getenv("DB_PORT")
+DB_NAME = os.getenv("DB_NAME")
+DB_USER = os.getenv("DB_USER")
+DB_PASSWORD = os.getenv("DB_PASSWORD")
+
 # Database setup
-DATABASE_URI = "postgresql://{{env_var('DB_USER')}}:{{env_var('DB_PASSWORD')}}@{{env_var('DB_HOST')}}/{{env_var('DB_NAME')}}"
+DATABASE_URI = f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
 engine = create_engine(DATABASE_URI)
 
 def process_images(image_dir):
