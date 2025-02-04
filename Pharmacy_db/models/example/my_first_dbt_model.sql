@@ -6,22 +6,18 @@
 
     Try changing "table" to "view" below
 */
-
-{{ config(materialized='table') }}
-
-WITH pharmacy AS (
+WITH my_first_dbt_model AS (
     SELECT
         id,
-        Date,
-        Message_ID,
-       Channel_Title,
-        Channel_Username,
-        Message,
-        Message_Date,
-        Media_Path
+        message_id,
+        channel_title,
+        channel_username,
+        message,
+        message_Date,
+        media_path
     FROM
-        pharmacy
+        public.cleaned_data
     WHERE
-        Message IS NOT NULL
+        message IS NOT NULL
 )
-SELECT * FROM pharmacy
+SELECT * FROM my_first_dbt_model
