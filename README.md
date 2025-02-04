@@ -104,5 +104,32 @@ ethiopian-medical-data-pipeline/
    dbt test
    dbt docs generate
    dbt docs serve
-   ```
 
+### **Task 3: Object Detection**
+1. Run the object detection script:
+   ```bash
+   python scripts/object_detection.py
+   ```
+   - This script uses YOLO to detect objects in the collected images.
+   - Results are saved in `data/processed/object_detection_results/`.
+
+---
+
+## **Configuration**
+
+### **Telegram API**
+- Obtain `API_ID` and `API_HASH` from [my.telegram.org](https://my.telegram.org).
+- Update the credentials in `scripts/telegram_scraper.py`.
+
+### **DBT Configuration**
+- Update `dbt/profiles.yml` with your PostgreSQL database credentials.
+
+### **YOLO Configuration**
+- Download the YOLO model weights and configuration files.
+- Update the paths in `scripts/object_detection.py`.
+
+---
+
+## **Logging and Monitoring**
+- Logs are stored in the `logs/` directory.
+- Use the logging module to track progress and debug issues.
